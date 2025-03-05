@@ -30,7 +30,7 @@ public class Order implements Serializable {
 
 	private Integer orderStatus;
 
-	@ManyToOne // vários pedidos tem um usuário
+	@ManyToOne // varios pedidos tem um usuário
 	@JoinColumn(name = "client_id") // chave estrangeira no banco de dados
 	private User client;
 
